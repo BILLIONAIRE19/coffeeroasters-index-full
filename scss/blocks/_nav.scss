@@ -1,0 +1,27 @@
+.nav {
+    margin-left: auto;
+}
+
+.nav__list {
+    @include reset-list;
+    display: flex;
+}
+
+.nav__item {
+    margin-right: 33px;   
+}
+
+.nav__item:last-child {
+    margin-right: 0;
+}
+
+.nav__link {
+    @include reset-link;
+    color: $link-color;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+        border-bottom: 3px solid #000;
+    }
+
+}
